@@ -1,0 +1,459 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    background-color: #f9f9f9;
+}
+
+textarea {
+    resize: none;
+    outline: none;
+}
+
+label {
+    display: block;
+    padding: 7px;
+    font-weight: lighter;
+    font-size: 20px;
+    color: #08153A;
+}
+
+
+/*     color: #08153A;
+*/
+
+h3 {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    color: black;
+    font-weight: lighter;
+    background-color: #f9f9f9;
+    background-size: cover;
+}
+
+.info input[type=text] {
+    width: 30%;
+    outline: none;
+    background-color: white;
+    color: #163a79;
+}
+
+/*
+input[type=number] {
+    width: 100%;
+    height: 28px;
+    outline: none;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    background-color: white;
+    color: #163a79;
+}
+
+#bp {
+    width: 100%;
+    height: 28px;
+    outline: none;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    padding: 1px 2px;
+    background-color: white;
+    color: #163a79;
+}
+*/
+
+input[type=text],
+textarea,
+input[type=date],
+input[type=time] {
+    outline: none;
+    width: 9cm;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    color: #636363;
+}
+
+input[type=submit],
+input[type=button] {
+    background-color: #636363;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 30px 0px 0px 870px;
+    width: 150px;
+}
+
+input[type=button]:hover {
+    background-color: #888787;
+}
+
+.box {
+    margin-left: 20px;
+}
+
+input[type=submit]:hover {
+    background-color: #FFF1F1;
+}
+
+.container {
+    border-radius: 0;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: -10px;
+}
+
+.info {
+    padding: 20px;
+}
+
+.info label {
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+.cont {
+    cursor: pointer;
+    font-size: 17px;
+    color: black;
+}
+
+.box1 {
+    float: right;
+    margin-right: 50px;
+    border-left: 1px solid #08153A;
+    padding-left: 15px;
+}
+
+
+/*
+
+
+  footer {
+      background-color: #1E4640;
+      height: 100px;
+      margin-top: 50px;
+  }
+
+
+  footer p {
+      color: white;
+      text-align: left;
+      padding: 20px;
+      font-weight: bold;
+  }
+
+
+
+  */
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+
+li {
+    color: white;
+    margin: 0 0 0 25px;
+    width: 200px;
+    font-weight: lighter;
+}
+
+.box1 label {
+    font-weight: lighter;
+}
+
+
+/* new patient info */
+
+.contnew {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 5px;
+}
+
+.main input {
+    outline: none;
+    width: 9cm;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.form-box label {
+    font-weight: lighter;
+    font-size: 15px;
+    color: black;
+}
+
+.main {
+    margin-bottom: 30px;
+}
+
+
+/* end of new patient info */
+
+
+/* checkbox */
+
+.checkboxcont {
+    float: right;
+    margin-right: 50px;
+}
+
+.checkboxcont input {
+    margin: .4rem;
+}
+
+.check label {
+    display: inline;
+}
+
+
+/* end of checkbox */
+
+.box {
+    margin-top: 10px;
+}
+
+
+/*for header*/
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px 15px 30px;
+    background-color: #98D7C2;
+    color: rgba(255, 255, 255, 0.384);
+    position: sticky;
+}
+
+
+/*for header*/
+
+menu>.active {
+    color: white;
+}
+
+
+/*for header*/
+
+.menu > div > a > svg {
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+    margin-bottom: -1.8px;
+  }
+
+/*for header*/
+
+.menu :hover:not(.active) {
+    color: #0c7c44;
+}
+
+
+/*for header*/
+
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*for header*/
+
+.logo>img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+
+/*for header*/
+
+.logo>h4 {
+    margin-top: 10px;
+}
+
+
+/*for header*/
+
+.menu {
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60%;
+    cursor: pointer;
+}
+
+
+/*for header*/
+
+.routing {
+    text-decoration: none;
+    color: white;
+}
+
+.menu>.back_icon>a>svg {
+    margin-top: 0px;
+}
+
+
+/*for footer*/
+
+.footer {
+    background-color: #00221C;
+    height: 150px;
+    margin-top: 600px;
+}
+
+
+/*for footer*/
+
+.footer p {
+    color: white;
+    text-align: left;
+    padding: 20px 20px 0px 20px;
+    font-weight: lighter;
+}
+
+.pat-border {
+    border-left: 5px solid #98D7C2;
+    margin-bottom: 5px;
+}
+
+/*
+.m-container {
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+.float-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+
+.floatme {
+    margin: 0 0 4px 0;
+}
+
+.float-date-time {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+}
+
+*/
+
+/* maryams table */ 
+
+.container>div>table {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.container>div>table>tbody>tr>td {
+    text-align: center;
+    padding: 7px;
+}
+
+thead>tr>th {
+    font-weight: bold;
+    color: white;
+    padding: 10px 7px 10px 7px;
+    background-color: #54585d;
+	color: #ffffff;
+    font-size: 15px;
+    
+}
+
+#Table {
+    border-collapse: collapse;
+}
+
+
+#Table thead tr td {
+    text-align: center;
+    padding: 7px;
+    color: #636363;
+	border: 1px solid #dddfe1;
+    
+}
+
+#date {
+    width: 100px;
+}
+
+#time {
+    width: 50px;
+}
+
+#dx {
+    width: 500px;
+}
+
+#meds {
+    width: 600px;
+}
+
+#goto {
+    width: 100px;
+}
+
+#Table thead tr td a:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+#Table thead tr td a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+#Table thead tr td a:hover {
+    text-decoration: none;
+    color: #EDAE49;
+}
+
+#Table thead tr:nth-child(odd) {
+    background-color:#f2f2f2;
+  }
+
+
+#Table thead tr:nth-child(even) {
+    background-color:#fff;
+  }
+
+#Table thead tr:hover {
+    background-color: #ddd;
+}
+
+/* end of maryams table */ 
+
+/* patient history p */ 
+#hx-p {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #54585d;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px;
+    border-left: 3px solid #54585d;
+    float: left;
+}
+/* patient history p */ 

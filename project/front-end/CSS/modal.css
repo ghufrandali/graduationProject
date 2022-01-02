@@ -1,0 +1,175 @@
+* {
+    /*
+    font-family: Helvetica;
+    */
+    font-family: 'Mulish', sans-serif;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    font-size: 17px;
+    padding-left: 7px;
+    padding-top: 3px;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    -webkit-animation-name: fadeIn;
+    /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    width: 50%;
+    position: absolute;
+    top: 10%;
+    margin-left: 25%;
+    background-color: #f9f9f9;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+    /*
+    background-image: url('../front-end/b3.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    */
+}
+
+
+/* The Close X Button */
+
+.close {
+    color: white;
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 10px 16px;
+    background-color: #ffa822;
+    color: white;
+}
+
+.modal-body {
+    padding: 10px 16px;
+    margin-right: 15px;
+}
+
+.modal-body p {
+    font-size: 17px;
+    padding: 0px;
+    margin-top: 9px;
+}
+
+.modal-footer {
+    padding: 3px 16px;
+    margin-top: 20px;
+    color: white;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left {
+    float: left;
+    width: 20%;
+    text-align: left;
+}
+
+.right {
+    float: left;
+    width: 80%;
+}
+
+.modal-input {
+    width: 100%;
+    height: 32px;
+    font-size: 15px;
+    padding-left: 7px;
+    border: 1px solid darkgray;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+.action-button {
+    background-color: #ff6150;
+    border: 2px solid #ff6150;
+    color: white;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 7px 7px 15px 7px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    float: right;
+}
+
+.action-button:hover {
+    background-color: white;
+    color: black;
+}

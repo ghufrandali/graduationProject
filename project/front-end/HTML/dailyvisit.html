@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/dailyvisit.css">
+
+
+
+    <title>Daily Visit Notes </title>
+    <!--
+    <script type="text/javascript">
+        function saved() {
+            if (document.getElementById("dx").value == "") {
+                var err = document.getElementById("dx");
+                err.style.borderColor = "red";
+                alert('Please Fill Out Required Fields');
+            } else
+                alert('File has been saved');
+        }
+
+
+        function changecolor() {
+            var err = document.getElementById("dx");
+            err.style.borderColor = "red";
+        }
+    </script>
+    -->
+</head>
+
+<body>
+
+
+    <div>
+        <div class="header noPrint">
+            <div class="logo">
+                <img src="../img/finaLogo.png">
+                <h4>Al-Balqa' Applied University </h4>
+            </div>
+
+            <div class="menu">
+                <div class="back_icon">
+                    <a class="routing" href="visit.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+                        </svg></a>
+                </div>
+                <!-- <div>
+                    <a class="routing" href="Previsit.html">History</a>
+                </div>
+            -->
+                <div class="logout">
+
+                    <a class="routing" href="login.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+                            <path fill-rule="evenodd"
+                                d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                        </svg> Log Out</a>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <h3 style="margin-top: 20px; border-radius: 0%; " class="noPrint"> Patient Information</h3>
+
+        <div class="main">
+            <form>
+                <div class="contnew">
+                    <div class="flex1">
+                        <div class="form-box">
+                            <label class="pat-border"> Patient Name </label>
+                            <input type="text" id="name" readonly></input>
+                        </div>
+
+
+                        <div class="form-box noPrint">
+                            <label class="pat-border"> Patient Phone Number </label>
+                            <input type="text" id="number" readonly></input>
+                        </div>
+                    </div>
+
+
+                    <div class="flex2">
+                        <div class="form-box noPrint">
+                            <label class="pat-border"> Patient ID</label>
+                            <input type="text" id="id" readonly></input>
+                        </div>
+
+
+                        <div class="form-box">
+                            <label class="pat-border"> Patient DOB</label>
+                            <input type="text" id="dob" readonly></input>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <hr>
+        
+
+
+        <h3 style="margin-top: 0%; border-radius: 0%;" class="noPrint"> Patient Measurements </h3>
+
+
+        <div class="m-container noPrint">
+            <form id="visitform">
+                <div class="float-cont">
+
+                    <div class="flex1">
+
+                        <div class="form-box floatme">
+                            <label class="pat-border"> Weight </label>
+                            <input type="number" id="weight"></input>
+                        </div>
+                        <div class="form-box floatme">
+                            <label class="pat-border"> Height </label>
+                            <input type="number" id="height"></input>
+                        </div>
+
+                    </div>
+
+                    <div class="flex2">
+
+                        <div class="form-box floatme">
+                            <label class="pat-border"> Temp </label>
+                            <input type="number" id="temp"></input>
+                        </div>
+
+                        <div class="form-box floatme">
+                            <label class="pat-border"> Pulse </label>
+                            <input type="number" id="pulse"></input>
+                        </div>
+                    </div>
+
+
+                    <div class="flex3">
+                        <div class="form-box floatme">
+                            <label class="pat-border floatme">B.P.</label>
+                            <input type="text" id="bp" />
+
+                        </div>
+                        <div class="form-box floatme">
+                            <label class="pat-border"> Spo2</label>
+                            <input type="number" id="o2sat" />
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+        </div>
+
+        
+
+
+
+        <h3 style="margin-top: 25px; border-radius: 0%;" class="noPrint"> New Patient Visit</h3>
+
+
+        <div class="container">
+
+<!--
+            <div class="float-date-time">
+
+                <div class="box">
+                    <div class="col">
+                        <label class="pat-border" for="complaint"> Date </label>
+                        <input id="date" type="date"></input>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="col">
+                        <label class="pat-border" for="complaint"> Time </label>
+                        <input id="time" type="time"> </input>
+                    </div>
+                </div>
+
+            </div> 
+
+        -->
+
+        <hr style="margin-bottom: 60px;">
+
+            <div class="box">
+                <div class="col">
+                    <label class="pat-border" for="complaint"> Complaint </label>
+                    <textarea id="complaint" placeholder="Enter Complaint...."></textarea>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="col">
+                    <label class="pat-border" for="physical"> Physical</label>
+                    <textarea id="physical" placeholder="Enter Physical...."></textarea>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="col">
+                    <label class="pat-border" for="Diagnosis"> Diagnosis</label>
+                    <textarea id="dx" id="err" placeholder="Enter Diagnoses...."></textarea>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="col">
+                    <label class="pat-border" for="meds"> Medications</label>
+                    <textarea id="meds" placeholder="Enter Medications..."></textarea>
+                </div>
+            </div>
+
+
+
+
+            <div class="row noPrint">
+                <input type="button" onclick="window.print();" class="noPrint" value="Print Visit">
+
+                <input type="submit" value="Save File">
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+        </form>
+
+
+        <div class="footer noPrint">
+            <p> Al Balqaa Applied University </p>
+            <p>جامعة البلقاء التطبيقية Al-Salt, Jordan Tel: (+962-5) 3491111, Fax: (+962-5) 3491111 P.O.Box: Al-Salt 19117, Jordan E-Mail: info@bau.edu.jo </p>
+        </div>
+
+
+
+        <script src="../js/patient-client.js"></script>
+        <script src="../js/model-handler.js"></script>
+        <script src="../js/medicalInfo.js"></script>
+        <script>
+            loadPatientDataForVisit();
+        </script>
+
+        <script>
+            loadVisitInfo();
+        </script>
+
+        <script>
+            const visitForm = document.getElementById("visitform");
+            visitForm.addEventListener("submit", haveVisitInfoTest);
+        </script>
+
+
+</body>
+
+</html>

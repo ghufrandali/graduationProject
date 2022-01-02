@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>شاشة الادخال</title>
+    <link rel="stylesheet" href="../css/input.css">
+</head>
+
+<body dir="rtl">
+
+    <div>
+
+        <div class="header" dir="ltr">
+            <div class="logo">
+                <img src="../img/finaLogo.png">
+                <h4>Al-Balqa' Applied University </h4>
+            </div>
+
+            <div class="menu">
+                <div class="active">
+                    <a class="routing" href="input.html">New patient</a>
+                </div>
+
+                <div>
+                    <a class="routing" href="search.html">Registered patient</a>
+                </div>
+
+                <!--
+                <div>
+                    <a class="routing" href="workInjury.html" target="_blank"> Forms</a>
+                </div>
+            -->
+                <div>
+                    <a class="routing" href="login.html"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+                            <path fill-rule="evenodd"
+                                d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                        </svg> Log Out
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <h2 style="font-weight: lighter;">  معلومات المريض </h2>
+            <form id="addPatientModel"> 
+                <div class="box">
+                    <label for="name">الإسم</label>
+                    <input type="text" id="name" name="name" placeholder="Your name">
+                </div>
+                <div class="box">
+
+                    <label for="uniID">الرقم الوطني/الرقم الجامعي</label>
+                    <input type="text" id="uniID" name="num" placeholder="Your id number">
+
+                </div>
+
+
+                <div class="box">
+
+                    <label for="phoneNo">رقم الهاتف</label>
+                    <input type="text" id="phoneNo" name="num" placeholder="Your phone number">
+
+                </div>
+
+                <div class="box">
+
+                    <label for="section">الدائرة/التخصص</label>
+                    <input type="text" id="section" name="section" placeholder="Your section">
+
+                </div>
+
+                <div class="box">
+
+                    <label for="dob">تاريخ الميلاد</label>
+                    <input type="date" id="dob">
+
+
+                </div>
+
+                <div class="box">
+
+                    <label for="address">عنوان السكن</label>
+                    <textarea id="address" name="address" placeholder="Write your address" style="height:100px"></textarea>
+
+                </div>
+
+                <div class="box">
+                    <button type="button" onclick="addNewPatient()" id="saveNewPatientbtn"> Save
+                        </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p> Al Balqaa Applied University </p>
+        <p>جامعة البلقاء التطبيقية Al-Salt, Jordan Tel: (+962-5) 3491111, Fax: (+962-5) 3491111 P.O.Box: Al-Salt 19117, Jordan E-Mail: info@bau.edu.jo </p>
+    </div>
+
+
+    <script src="../js/patient-client.js"></script>
+    <script src="../js/model-handler.js"></script>
+    
+
+</body>
+
+</html>

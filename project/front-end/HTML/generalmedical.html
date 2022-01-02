@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>General Medical History</title>
+    <link rel="stylesheet" href="../CSS/generalmedical.css">
+
+
+</head>
+
+<body>
+
+
+
+
+    <div>
+        <div class="header">
+            <div class="logo">
+                <img src="../img/finaLogo.png">
+                <h4>Al-Balqa' Applied University </h4>
+            </div>
+
+            <div class="menu">
+                <div class="back_icon">
+                    <a class="routing" href="search.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+                        </svg></a>
+                </div>
+
+                <div>
+                    <a class="routing" href="#">General Medical History</a>
+                </div>
+
+                <div>
+                    <a class="routing" href="visit.html">Visits</a>
+                </div>
+
+                <div class="logout">
+
+                    <a class="routing" href="login.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+                            <path fill-rule="evenodd"
+                                d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                        </svg> Log Out</a>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Patient info -->
+
+
+        <h3 style="margin-top: 20px; border-radius: 0%; "> Patient Information</h3>
+
+        <div class="main">
+
+            <div class="contnew" id="generalInfo">
+                <div class="flex1">
+                    <div class="form-box">
+                        <label class="pat-label" style="border-left: 5px solid #98D7C2; margin-bottom: 5px;"> Patient
+                            Name </label>
+                        <input type="text" id="name" readonly> </input>
+                    </div>
+
+
+                    <div class="form-box">
+                        <label class="pat-label" style="border-left: 5px solid #98D7C2; margin-bottom: 5px;"> Patient
+                            Phone Number </label>
+                        <input type="text" id="number" readonly></input>
+                    </div>
+                </div>
+
+
+                <div class="flex2">
+                    <div class="form-box">
+                        <label class="pat-label" style="border-left: 5px solid #98D7C2; margin-bottom: 5px;"> Patient
+                            ID</label>
+                        <input type="text" id="id" readonly></input>
+                    </div>
+
+
+                    <div class="form-box">
+                        <label class="pat-label" style="border-left: 5px solid #98D7C2; margin-bottom: 5px;"> Patient
+                            DOB</label>
+                        <input type="text" id="dob" readonly></input>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+
+
+        <br>
+        <!-- General medical history -->
+
+        <div class="container">
+
+            <h3>General Medical History</h3>
+
+            <form class="general-form" id="generalform">
+                <div class="box">
+                    <label class="g-label">Blood Group</label>
+                    <input type="text" id="bloodGroup"></input>
+                </div>
+                <div class="box">
+                    <label class="g-label">Allergies</label>
+                    <input type="text" id="allergies" />
+                </div>
+
+
+                <div class="box">
+                    <label class="g-label">Chronic Diseases</label>
+                    <input type="text" id="chronicDis" />
+                </div>
+
+
+                <div class="box">
+                    <label class="g-label">Family History</label>
+                    <input type="text" id="familyHistory" />
+
+                </div>
+
+                <!-- 
+                <div class="box">
+                    <label class="g-label">Smoking:</label>
+                    <input type="radio" name="Smoking" value="Yes" id="smoking"> 
+                    <label id="no-border" class="g-label">Yes</label>
+                    <input type="radio" name="Smoking" value="No" >
+                    <label id="no-border" class="g-label">No</label>
+                </div>
+            -->
+                <!--
+                <div class="box">
+
+                    <label for="smoking" class="g-label">Smoking ?</label>
+
+                    <select name="smoking" id="smoking">
+                        <option> </option>
+                        <option value="yes">yes</option>
+                        <option value="no">no</option>
+                    </select>
+                </div>
+            -->
+
+                <!--
+                <div class="box">
+                    <h3>VIS</h3>
+                </div>
+
+                <div class="box">
+                    <label class="g-label">Temp.</label>
+                    <input type="text" id="temp" />
+
+                </div>
+
+                <div class="box">
+                    <label class="g-label">B.P.</label>
+                    <input type="text" id="bp" />
+
+                </div>
+
+                <div class="box">
+                    <label class="g-label">P.R.</label>
+                    <input type="text" id="pr" />
+
+                </div>
+
+                <div class="box">
+                    <label class="g-label">Spo2</label>
+                    <input type="text" id="o2sat" />
+                </div>
+            -->
+                <div class="box">
+                    <input type="submit" value="save">
+                </div>
+            </form>
+
+        </div>
+
+
+
+        </form>
+    </div>
+
+
+    <div class="footer">
+        <p> Al Balqaa Applied University </p>
+        <p>جامعة البلقاء التطبيقية Al-Salt, Jordan Tel: (+962-5) 3491111, Fax: (+962-5) 3491111 P.O.Box: Al-Salt 19117, Jordan E-Mail: info@bau.edu.jo </p>
+    </div>
+
+
+    <script src="../js/patient-client.js"></script>
+    <script src="../js/model-handler.js"></script>
+    <script src="../js/medicalInfo.js"></script>
+    <script>
+        loadPatientDataForGeneral();
+    </script>
+    <script>
+        const generalForm = document.getElementById("generalform");
+        generalForm.addEventListener("submit", haveGenralInfoTest);
+    </script>
+
+
+
+
+</body>
+
+</html>

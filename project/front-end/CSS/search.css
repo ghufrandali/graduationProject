@@ -1,0 +1,322 @@
+* {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: "opens Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+/*for header*/
+
+menu>.active {
+    color: white;
+}
+
+
+/*for header*/
+
+.menu :hover:not(.active) {
+    color: #A1A3A5;
+}
+
+
+/*for header*/
+
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*for header*/
+
+.logo>img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+
+/*for header*/
+
+
+
+/*for header*/
+
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*for header*/
+
+.logo>h4 {
+    margin-top: 10px;
+}
+
+
+/*for header*/
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px 15px 30px;
+    background-color: #98D7C2;
+    color: rgba(255, 255, 255, 0.384);
+    position: sticky;
+  }
+
+
+/*for header*/
+
+.menu {
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60%;
+    cursor: pointer;
+}
+
+
+
+/*for header*/
+
+.menu>.active {
+    color: white;
+}
+
+
+/*for header*/
+
+.menu > div > a > svg {
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+    margin-bottom: -1.8px;
+  }
+
+/*for header*/
+
+.menu :hover:not(.active) {
+    color: #A1A3A5;
+}
+
+
+/*for header*/
+
+.routing {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*for container*/
+
+.container {
+    width: 50%;
+    height: 70%;
+    margin: 13%;
+    margin-top: 100px;
+    margin-bottom: 300px;
+    background-color: #f2f2f2;
+}
+
+
+/*for container*/
+
+.search-box {
+    padding: 20px 0px 0px;
+    width: 150%;
+    position: relative;
+    display: flex;
+}
+
+
+/*for container*/
+
+.container>p {
+    font-size: 25px;
+    font-weight: lighter;
+    color: #54585d;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px;
+    border-left: 3px solid #54585d;
+
+}
+
+
+/*for container*/
+
+
+/*for container*/
+
+.search {
+    width: 100%;
+    border: 1px solid #54585d;
+    border-radius: 5px 0px 0px 5px;
+    border-right: none;
+    padding: 7px;
+    height: 20px;
+    outline: none;
+    color: #000000;
+}
+
+.search:hover {
+    color: black;
+    box-shadow: 0 0 5px #54585d;
+}
+
+.search-btn {
+    width: 43px;
+    height: 36px;
+    padding: 9px;
+    border: 1px solid #54585d;
+    background: #54585d;
+    color: #fff;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.search-btn:hover {
+    box-shadow: 0 0 5px #54585d;
+}
+
+
+/*for container*/
+
+.routing {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*for footer*/
+
+.footer {
+    background-color: #00221C;
+    height: 150px;
+    margin-top: 600px;
+}
+
+
+/*for footer*/
+
+.footer p {
+    color: white;
+    text-align: left;
+    padding: 20px 20px 20px 20px;
+    font-weight: lighter;
+}
+
+.page {
+    height: 90vh;
+}
+
+.container>div>table {
+    width: 150%;
+    margin-top: 50px;
+    /* border-collapse: collapse; */
+}
+
+.container>div>table>tbody>tr>td {
+    text-align: center;
+    padding: 7px;
+}
+
+thead>tr>th {
+    font-weight: bold;
+    color: white;
+    padding: 10px 7px 10px 7px;
+    background-color: #54585d;
+	color: #ffffff;
+	border: 1px solid #54585d;
+    font-size: 15px;
+    
+}
+
+
+/*
+.goto > a {
+  color:black;
+  text-decoration: none;
+}
+*/
+
+
+/*
+a:link {
+  text-decoration: none;
+  color: white;
+}
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+
+a:hover {
+  color: #EDAE49;
+}
+*/
+
+#Table {
+    border-collapse: collapse;
+}
+
+
+#Table thead tr td {
+    text-align: center;
+    padding: 7px;
+    color: #636363;
+	border: 1px solid #dddfe1;
+    
+}
+
+#Table thead tr td a:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+#Table thead tr td a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+#Table thead tr td a:hover {
+    text-decoration: none;
+    color: #EDAE49;
+}
+
+#Table thead tr:nth-child(odd) {
+    background-color:#f2f2f2;
+  }
+
+
+#Table thead tr:nth-child(even) {
+    background-color:#fff;
+  }
+
+#Table thead tr:hover {
+    background-color: #ddd;
+}

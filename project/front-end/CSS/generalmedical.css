@@ -1,0 +1,302 @@
+body { 
+  padding: 0%;
+  margin:0%;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+  background-color: #f2f2f2;
+   
+}
+
+
+textarea {
+  resize: none;
+  outline: none;
+}
+
+/*for header*/
+
+menu>.active {
+  color:white;
+}
+
+
+/*for header*/
+
+.menu :hover:not(.active) {
+  color: #A1A3A5;
+}
+
+
+/*for header*/
+
+.logo {
+  display: flex;
+  flex-direction: row;
+}
+
+
+ /*for header*/
+
+
+ .logo>img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+/*for header*/
+
+
+
+/*for header*/
+
+.logo {
+  display: flex;
+  flex-direction: row;
+}
+
+
+/*for header*/
+
+.logo>h4 {
+  margin-top: 10px;
+}
+
+/*for header*/
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 30px 13px 30px;
+  background-color: #98D7C2;
+  color: rgba(255, 255, 255, 0.384);
+  position: sticky;
+}
+
+
+/*for header*/
+
+.menu {
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 60%;
+  cursor: pointer;
+}
+
+
+/*for header*/
+
+.menu>.active {
+  color: white;
+}
+
+/*for header*/
+
+.menu > div > a > svg {
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
+  margin-bottom: -1.8px;
+}
+
+
+/*for header*/
+
+.routing {
+  text-decoration: none;
+  color: white;
+}
+
+.menu>.back_icon>a>svg {
+  margin-top: 0px;
+}
+
+/* patient info */
+
+.form-box input {
+  outline: none;
+  width: 9cm;
+  padding: 10px;
+  margin: 10px 0 10px 0;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  color: #636363;
+}
+
+.main {
+  margin-bottom: 30px;
+}
+
+.contnew {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 5px;
+}
+
+
+.form-box label {
+  font-weight: lighter;
+  font-size: 15px;
+  color: black;
+}
+
+
+h3 {
+  text-align: center;
+  margin : 0;
+  padding: 10px;
+  color: black;
+  font-weight: lighter;
+  background-color: #f2f2f2;
+  background-size: cover;
+}
+
+
+.pat-label {
+  display: block;
+  padding: 7px;
+  font-weight: lighter;
+  font-size: 20px;
+  color: #08153A;
+}
+
+
+/*for container*/
+.general-form {
+  margin-left: 30%;
+  
+}
+
+
+/*for container*/
+
+.container> h3{
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.container>form>.box>h3{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+
+
+/*for container*/
+
+
+
+.container input[type=text]  {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid darkgray;
+  border-radius: 4px;
+  resize: vertical;
+  color: #636363;
+}
+
+
+.g-label {
+  padding: 12px 12px 12px 7px;
+  display: inline-block;
+  border-left: 5px solid #98D7C2; 
+  margin-bottom: 5px;
+}
+
+#no-border {
+   border:none;
+}
+
+
+
+
+/*for container*/
+
+.box > select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid darkgray;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid darkgray;
+  border-radius: 4px;
+  resize: vertical;
+  color: #636363;
+}
+
+input[type=submit] {
+  background-color:  #98D7C2;
+  color: white;
+  padding: 12px 20px;
+  border: 1px solid #98D7C2;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-top: 30px;
+}
+
+input[type=date] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid darkgray;
+  border-radius: 4px;
+  resize: vertical;
+  color: #636363;
+}
+/*for container*/
+
+input[type=submit]:hover {
+  background-color: #00221C;
+}
+
+
+/*for container*/
+
+.box {
+  width: 50%;
+  margin-top: 6px;
+}
+
+
+
+/*for footer*/
+.footer {
+  background-color: #00221C;
+  height: 150px;
+  margin-top: 200px;
+}
+
+/*for footer*/
+
+.footer p {
+  color: white;
+  text-align: left;
+  padding: 20px 20px 0px 20px;
+  font-weight: lighter;
+}
+
+.routing {
+  text-decoration: none;
+  color: white;
+}
+
+/*
+#smoking {
+  width: 105%;
+}
+
+*/

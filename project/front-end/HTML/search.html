@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Search </title>
+    <link rel="stylesheet" href="../css/search.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="page">
+
+
+        <div class="header" dir="ltr">
+
+            <div class="logo">
+                <img src="../img/finaLogo.png">
+                <h4>Al-Balqa' Applied University </h4>
+            </div>
+
+            <div class="menu">
+                <div class="active">
+                    <a class="routing" href="input.html">New patient</a>
+                </div>
+
+                <div>
+                    <a class="routing" href="search.html">Registered patient</a>
+                </div>
+                <!--
+                <div>
+                    <a class="routing" href="workInjury.html" target="_blank"> Forms </a>
+                </div>
+            -->
+                <div>
+                    <a class="routing" href="login.html"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+                            <path fill-rule="evenodd"
+                                d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                        </svg> Log Out
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <p>Search patient</p>
+            <div class="search-box">
+                <input type="text" class="search" placeholder="Enter information" id="searchpatient">
+                <button type="submit" class="search-btn" id="searchbtn" onclick="searchPatients()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16" >
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                </button>
+
+
+            </div>
+
+            <div>
+                <table id="Table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Patient ID</th>
+                            <th> Phone </th>
+                            <th> Go to </th>
+                            <th> Edit </th>
+                            <th> Delete Patient </th>
+                        </tr>
+                    </thead>
+
+                </table>
+
+            </div>
+
+
+
+        </div>
+
+        <!-- Add Note Modal -->
+        <div id="editNPatientModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span id="closeAdd" class="close">&times;</span>
+                    <h2>Edit Patient Info </h2>
+                </div>
+                <div class="modal-body">
+
+
+                    <div class="row">
+                        <div class="left">
+                            <p> Name </p>
+                        </div>
+                        <div class="right">
+                            <label for="name"></label>
+                            <input type="text" id="name" name="name" placeholder="Your name" class="modal-input">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="left">
+                            <p> ID </p>
+                        </div>
+                        <div class="right">
+                            <label for="uniID"> </label>
+                            <input type="text" id="uniID" name="num" placeholder="Your id number" class="modal-input">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="left">
+                            <p> Phone Number </p>
+                        </div>
+                        <div class="right">
+
+                            <label for="phoneNo"> </label>
+                            <input type="text" id="phoneNo" name="num" placeholder="Your phone number" class="modal-input">
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="left">
+                            <p> Department </p>
+                        </div>
+                        <div class="right">
+
+                            <label for="section"> </label>
+                            <input type="text" id="section" name="section" placeholder="Your section" class="modal-input">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="left">
+                            <p> DOB </p>
+                        </div>
+                        <div class="right">
+                            <label for="dob"> </label>
+                            <input type="date" id="dob" id="addTitle" class="modal-input"></input>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="left">
+                            <p> Address </p>
+                        </div>
+                        <div class="right">
+                            <label for="address"> </label>
+                            <textarea id="address" name="address" placeholder="Write your address" style="height:80px" class="modal-input"></textarea>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <p id="addError" class="error"></p>
+                </div>
+                <div class="modal-footer">
+
+                    <button id="saveAddPatientBtn" onclick="updatePatientButton()" type="button" class="action-button">Save
+            </button>
+
+
+                    <button id="cancelAddPatientBtn" type="button" class="action-button">
+              Cancel
+            </button>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="footer">
+            <p> Al Balqaa Applied University </p>
+            <p>جامعة البلقاء التطبيقية Al-Salt, Jordan Tel: (+962-5) 3491111, Fax: (+962-5) 3491111 P.O.Box: Al-Salt 19117, Jordan E-Mail: info@bau.edu.jo </p>
+        </div>
+
+
+
+        <script src="../js/patient-client.js"></script>
+        <script src="../js/model-handler.js"></script>
+        <script src="../js/medicalInfo.js"></script>
+
+        <script>
+            getPatientInfo();
+        </script>
+    </div>
+
+</body>
+
+</html>
